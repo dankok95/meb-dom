@@ -1,0 +1,184 @@
+{
+  "Header": {
+    "title": "Meble na wymiar dopasowane do Twojego wnętrza",
+    "paragraph": "Projektujemy i wykonujemy meble kuchenne, szafy, garderoby, zabudowy na wymiar – z montażem."
+  },
+  "About": {
+    "paragraph": "Z pasji do drewna i precyzji tworzymy meble, które idealnie pasują do Twojej przestrzeni. Specjalizujemy się w projektowaniu i wykonaniu kuchni, łazienek, szaf, garderób oraz zabudów na wymiar – wraz z kompleksowym montażem.",
+    "Why": [
+      "Meble idealnie dopasowane",
+      "Indywidualne podejście",
+      "Najwyższa jakość materiałów",
+      "Profesjonalny montaż"
+    ],
+    "Why2": [
+      "Precyzyjne wykonanie i montaż",
+      "Doświadczenie i wiedza",
+      "Kompleksowa obsługa",
+      "Zadowolenie klientów"
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/04-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/05-large.jpg",
+      "smallImage": "img/portfolio/05-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/06-large.jpg",
+      "smallImage": "img/portfolio/06-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/07-large.jpg",
+      "smallImage": "img/portfolio/07-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/08-large.jpg",
+      "smallImage": "img/portfolio/08-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/09-large.jpg",
+      "smallImage": "img/portfolio/09-small.jpg"
+    }
+  ],
+  "Services": [
+    {
+      "icon": "fa fa-cutlery",
+      "name": "Meble kuchenne na wymiar",
+      "text": "Nowoczesne lub klasyczne — projektujemy kuchnie, które zachwycają wyglądem i ergonomią."
+    },
+    {
+      "icon": "fa fa-tshirt",
+      "name": "Szafy i garderoby",
+      "text": "Zabudowy do wnęk, garderoby z przesuwnymi drzwiami i układami dopasowanymi do Twoich potrzeb."
+    },
+    {
+      "icon": "fa fa-bed",
+      "name": "Zabudowy sypialni i salonu",
+      "text": "Funkcjonalne, stylowe rozwiązania dla każdego wnętrza — łóżka, szafki RTV, półki, komody."
+    },
+    {
+      "icon": "fa fa-puzzle-piece",
+      "name": "Nietypowe meble i na zamówienie",
+      "text": "Masz własny pomysł? Zrealizujemy go dokładnie tak, jak sobie wymarzyłeś."
+    },
+    {
+      "icon": "fa fa-briefcase",
+      "name": "Meble do biura",
+      "text": "Funkcjonalne i estetyczne meble biurowe, które zwiększą komfort pracy."
+    },
+    {
+      "icon": "fa fa-bath",
+      "name": "Meble łazienkowe",
+      "text": "Tworzymy zabudowy do łazienek, które łączą odporność na wilgoć z nowoczesnym designem. Dopasujemy szafki, blaty i schowki nawet do najmniejszej przestrzeni, zapewniając komfort i porządek."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "John Doe",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Mike Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Jane Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Karen Doe",
+      "job": "Project Manager"
+    }
+  ],
+  "Contact": {
+    "address": "4321 California St, San Francisco, CA 12345 ",
+    "phone": "+1 123 456 1234",
+    "email": "info@company.com",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "youtube": "youtube.com"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-comments",
+      "title": "Bezpłatna konsultacja",
+      "text": "Omawiamy potrzeby i doradzamy najlepsze rozwiązania dla Twojego wnętrza."
+    },
+    {
+      "icon": "fa fa-pencil-ruler",
+      "title": "Indywidualny projekt",
+      "text": "Tworzymy projekty mebli dopasowanych do Twojego stylu i przestrzeni."
+    },
+    {
+      "icon": "fa fa-hammer",
+      "title": "Rzetelne wykonanie",
+      "text": "Nasze meble tworzymy z najwyższą starannością i jakościowych materiałów."
+    },
+    {
+      "icon": "fa fa-tools",
+      "title": "Profesjonalny montaż",
+      "text": "Dostarczamy i montujemy gotowe meble, bez zbędnych formalności."
+    }
+  ]
+}
