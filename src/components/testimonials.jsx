@@ -5,17 +5,16 @@ export const Testimonials = (props) => {
     <div id="testimonials">
       <div className="container">
         <div className="section-title text-center">
-          <h2>What our clients say</h2>
+          <h2>Opinie klientów</h2>
+          <p>
+            Zadowolenie naszych klientów jest dla nas najważniejsze.<br/>Przeczytaj, co mówią o naszej pracy – wybrane opinie pochodzą z serwisu Google.
+          </p>
         </div>
         <div className="row">
           {props.data
             ? props.data.map((d, i) => (
                 <div key={`${d.name}-${i}`} className="col-md-4">
                   <div className="testimonial">
-                    <div className="testimonial-image">
-                      {" "}
-                      <img src={d.img} alt="" />{" "}
-                    </div>
                     <div className="testimonial-content">
                       <p>"{d.text}"</p>
                       <div className="testimonial-meta"> - {d.name} </div>

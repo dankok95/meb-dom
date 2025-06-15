@@ -5,7 +5,7 @@ export const Services = (props) => {
     <div id="services" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>NASZE USŁUGIs</h2>
+          <h2>NASZE USŁUGI</h2>
           <p>
           Tworzymy meble, które nie tylko wyglądają doskonale, ale są też maksymalnie funkcjonalne. Oferujemy kompleksowe rozwiązania od projektu po montaż — w Twoim stylu, pod Twoje wnętrze.
           </p>

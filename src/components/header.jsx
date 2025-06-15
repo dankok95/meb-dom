@@ -15,7 +15,7 @@ export const Header = (props) => {
                 <p>{props.data ? props.data.paragraph : "Ładowanie..."}</p>
                 <a
                   href="#contact"
-                  className="btn btn-custom btn-lg page-scroll"
+                  className="btn btn-custom btn-lg page-scroll main" 
                 >
                   Umów pomiar
                 </a>{" "}
