@@ -152,11 +152,27 @@ hr {
 .section-title {
   margin-bottom: 70px;
 }
+.section-title h1 {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
 .section-title h2 {
   position: relative;
   margin-top: 10px;
   margin-bottom: 15px;
   padding-bottom: 15px;
+}
+.section-title h1::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(90deg, #c36916 0%, #c57b32 51% 51%, #9f480b 100%);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  margin-left: -30px;
+  left: 50%;
 }
 .section-title h2::after {
   position: absolute;
@@ -281,6 +297,15 @@ header .intro-text {
 #features {
   background: #f6f6f6;
   padding: 50px 0;
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 20px;
+    
+  }
 }
 #features i.fa {
   font-size: 38px;
@@ -298,16 +323,16 @@ header .intro-text {
 #about {
   padding: 100px 0;
 }
-#about h3 {
+#about h2 {
   font-size: 22px;
   margin: 0 0 20px;
 }
-#about h2 {
+#about h1 {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 1px;
   padding-bottom: 15px;
 }
-#about h2::after {
+#about h1::after {
   position: absolute;
   content: "";
   background: linear-gradient(90deg, #c36916 0%, #c57b32 51% 51%, #9f480b 100%);
@@ -380,12 +405,13 @@ header .intro-text {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
 #services h3 {
-  font-weight: 500;
+  font-weight: 700;
   padding: 5px 0;
   color: #fff;
 }
 #services p {
   color: rgba(255, 255, 255, 0.75);
+  font-weight: 500;
 }
 #services .service-desc {
   margin-bottom: 40px;
@@ -534,7 +560,6 @@ header .intro-text {
   color: #fff;
   margin-top: 80px;
   margin-bottom: 25px;
-  padding-bottom: 20px;
   font-weight: 400;
 }
 #contact form {
@@ -635,6 +660,34 @@ label {
 #contact .social i.fa:hover {
   color: #608dfd;
   background: #fff;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  width: 80%;
+}
+.error-message {
+  color: white !important;
+  font-size: 1.4rem;
+  margin-top: 5px;
+  display: block;
 }
 /* Footer Section*/
 #footer {
