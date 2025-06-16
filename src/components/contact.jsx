@@ -6,34 +6,59 @@ const initialState = {
   name: "",
   email: "",
   message: "",
+  phone: "",
+  city: "",
 };
+
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState);
+  const [{ name, email, message, phone, city }, setState] = useState(initialState);
+  const [errors, setErrors] = useState({});
+  const [showModal, setShowModal] = useState(false);
+
+  const validate = () => {
+    const newErrors = {};
+
+    // Email regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      newErrors.email = "Wprowadź poprawny adres email.";
+    }
+
+    // Phone must have exactly 9 digits
+    const phoneRegex = /^\d{9}$/;
+    if (!phoneRegex.test(phone)) {
+      newErrors.phone = "Numer telefonu musi zawierać dokładnie 9 cyfr.";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
+    setErrors((prev) => ({ ...prev, [name]: "" })); // clear error for the field
   };
+
   const clearState = () => setState({ ...initialState });
-  
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
-    
+    if (!validate()) return;
+
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
+      .sendForm("service_160wseg", "template_45d5307", e.target, "NU6RHe7HVFjg1hPFJ")
       .then(
         (result) => {
           console.log(result.text);
-          clearState();
+          setShowModal(true);
         },
         (error) => {
           console.log(error.text);
         }
       );
   };
+
   return (
     <div>
       <div id="contact">
@@ -42,11 +67,9 @@ export const Contact = (props) => {
             <div className="row">
               <div className="section-title">
                 <h2>Skontaktuj się z nami</h2>
-                <p>
-                  Czekamy na Twoją wiadomość — odezwiemy się jak najszybciej.
-                </p>
+                <p>Czekamy na Twoją wiadomość — odezwiemy się jak najszybciej.</p>
               </div>
-              <form name="sentMessage" validate onSubmit={handleSubmit}>
+              <form name="sentMessage" noValidate onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
@@ -58,8 +81,39 @@ export const Contact = (props) => {
                         placeholder="Imię"
                         required
                         onChange={handleChange}
+                        value={name}
                       />
-                      <p className="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        id="city"
+                        name="city"
+                        className="form-control"
+                        placeholder="Miasto"
+                        required
+                        onChange={handleChange}
+                        value={city}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="row">
+                  <div className="col-md-6">
+                    <div className="form-group">
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        className="form-control"
+                        placeholder="Numer telefonu"
+                        onChange={handleChange}
+                        value={phone}
+                      />
+                      {errors.phone && <small className="error-message">{errors.phone}</small>}
                     </div>
                   </div>
                   <div className="col-md-6">
@@ -70,13 +124,14 @@ export const Contact = (props) => {
                         name="email"
                         className="form-control"
                         placeholder="Email"
-                        required
                         onChange={handleChange}
+                        value={email}
                       />
-                      <p className="help-block text-danger"></p>
+                      {errors.email && <small className="error-message">{errors.email}</small>}
                     </div>
                   </div>
                 </div>
+
                 <div className="form-group">
                   <textarea
                     name="message"
@@ -86,10 +141,9 @@ export const Contact = (props) => {
                     placeholder="Wiadomość"
                     required
                     onChange={handleChange}
+                    value={message}
                   ></textarea>
-                  <p className="help-block text-danger"></p>
                 </div>
-                <div id="success"></div>
                 <button type="submit" className="btn btn-custom btn-lg">
                   Wyślij wiadomość
                 </button>
@@ -131,6 +185,9 @@ export const Contact = (props) => {
               </p>
             </div>
           </div>
+
+          {/* ... reszta (informacje kontaktowe, social media, footer) zostaje bez zmian ... */}
+
           <div className="col-md-12">
             <div className="row">
               <div className="social">
@@ -156,12 +213,28 @@ export const Contact = (props) => {
           </div>
         </div>
       </div>
+
+      {showModal && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <h4>Dziękujemy!</h4>
+            <p>Twoja wiadomość została wysłana.</p>
+            <button
+              className="btn btn-custom"
+              onClick={() => {
+                setShowModal(false);
+                clearState();
+              }}
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      )}
+
       <div id="footer">
         <div className="container text-center">
-          <p>
-            &copy; Meb-Dom 2025 | Wszelkie prawa zastrzeżone
-            
-          </p>
+          <p>&copy; Meb-Dom 2025 | Wszelkie prawa zastrzeżone</p>
         </div>
       </div>
     </div>  
