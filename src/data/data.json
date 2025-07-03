@@ -21,48 +21,39 @@
   "Gallery": [
     {
       "title": "Project Title",
-      "largeImage": "img/portfolio/01-large.jpg",
-      "smallImage": "img/portfolio/01-small.jpg"
+      "image": "img/portfolio/1a.webp"
     },
     {
       "title": "Project Title",
-      "largeImage": "img/portfolio/02-large.jpg",
-      "smallImage": "img/portfolio/02-small.jpg"
+      "image": "img/portfolio/2a.webp"
     },
     {
       "title": "Project Title",
-      "largeImage": "img/portfolio/03-large.jpg",
-      "smallImage": "img/portfolio/03-small.jpg"
+      "image": "img/portfolio/3a.webp"
     },
     {
       "title": "Project Title",
-      "largeImage": "img/portfolio/04-large.jpg",
-      "smallImage": "img/portfolio/04-small.jpg"
+      "image": "img/portfolio/4a.webp"
     },
     {
       "title": "Project Title",
-      "largeImage": "img/portfolio/05-large.jpg",
-      "smallImage": "img/portfolio/05-small.jpg"
+      "image": "img/portfolio/5a.webp"
     },
     {
       "title": "Project Title",
-      "largeImage": "img/portfolio/06-large.jpg",
-      "smallImage": "img/portfolio/06-small.jpg"
+      "image": "img/portfolio/13a.webp"
     },
     {
       "title": "Project Title",
-      "largeImage": "img/portfolio/07-large.jpg",
-      "smallImage": "img/portfolio/07-small.jpg"
+      "image": "img/portfolio/14a.webp"
     },
     {
       "title": "Project Title",
-      "largeImage": "img/portfolio/08-large.jpg",
-      "smallImage": "img/portfolio/08-small.jpg"
+      "image": "img/portfolio/10a.webp"
     },
     {
       "title": "Project Title",
-      "largeImage": "img/portfolio/09-large.jpg",
-      "smallImage": "img/portfolio/09-small.jpg"
+      "image": "img/portfolio/9a.webp"
     }
   ],
   "Services": [
@@ -129,8 +120,8 @@
     "phone": "606 362 477",
     "email": "mebdom@poczta@onet.pl",
     "facebook": "https://www.facebook.com/profile.php?id=100054520656760&locale=pl_PL",
-    "twitter": "twitter.com",
-    "youtube": "youtube.com"
+    "instagram": "#",
+    "pinterest": "#"
   },
   "Features": [
     {
