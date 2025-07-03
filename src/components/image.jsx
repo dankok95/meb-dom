@@ -1,21 +1,20 @@
-import React from "react";
 
-export const Image = ({ title, largeImage, smallImage }) => {
+export const Image = ({ title, image }) => {
   return (
     <div className="portfolio-item">
       <div className="hover-bg">
         <a
-          href={largeImage}
+          href={image}
           title={title}
-          data-lightbox-gallery="gallery1"
+          data-lightbox-gallery="gallery2"
           target="_blank"
           rel="noopener noreferrer"
         >
           <div className="hover-text">
-            <h4>{title}</h4>
+            <h4>Kliknij, aby powiększyć</h4>
           </div>
           <img
-            src={smallImage}
+            src={image}
             className="img-responsive"
             alt={title}
             title={title}

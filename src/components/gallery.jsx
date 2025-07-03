@@ -24,17 +24,15 @@ export const Gallery = (props) => {
           </p>
         </div>
         <div className="row">
-          <div className="portfolio-items">
+          <div className="portfolio-items-grid">
             {props.data
               ? props.data.map((d, i) => (
                   <div
                     key={`${d.title}-${i}`}
-                    className="col-sm-6 col-md-4 col-lg-4"
                   >
                     <Image
                       title={d.title}
-                      largeImage={d.largeImage}
-                      smallImage={d.smallImage}
+                      image={d.image}
                       alt={d.title || "Realizacja mebli na wymiar"}
                     />
                   </div>
