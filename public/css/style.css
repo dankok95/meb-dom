@@ -322,6 +322,10 @@ header .intro-text {
 /* About Section */
 #about {
   padding: 100px 0;
+
+  @media screen and (max-width: 768px) {
+    padding: 30px 0 50px 0; 
+  }
 }
 #about h2 {
   font-size: 22px;
@@ -363,6 +367,7 @@ header .intro-text {
   background: #fff;
   border-right: 0;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+  
 }
 #about p {
   line-height: 24px;
@@ -374,9 +379,18 @@ header .intro-text {
   background: linear-gradient(to right, #CD853F, #DEB887);
   color: #fff;
 
+  @media screen and (max-width: 768px) {
+    padding: 30px 0 50px 0; 
+  }
+
   .service-wrapper div {
     height: 33vh;
+
+    @media screen and (max-width: 768px) {
+      height: 45vh; 
+    }
   }
+  
 }
 #services .service-desc {
   margin: 10px 10px 20px;
@@ -419,6 +433,10 @@ header .intro-text {
 /* Portfolio Section */
 #portfolio {
   padding: 100px 0;
+
+  @media screen and (max-width: 768px) {
+    padding: 30px 0 50px 0; 
+  }
 }
 .portfolio-item {
   padding: 0;
@@ -431,6 +449,12 @@ header .intro-text {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: none;
+    padding: 0 10px;
+  }
+
 }
 
 .portfolio-item img {
@@ -479,6 +503,10 @@ header .intro-text {
 #testimonials {
   padding: 100px 0;
   background: #cdcdcd70;
+
+  @media screen and (max-width: 768px) {
+    padding: 30px 0 50px 0;
+  }
 }
 #testimonials i {
   color: #e6e6e6;
@@ -518,6 +546,10 @@ header .intro-text {
 /* Team Section */
 #team {
   padding: 100px 0;
+
+  @media screen and (max-width: 768px) {
+    padding: 30px 0 50px 0;
+  }
 }
 #team h4 {
   margin: 5px 0;
@@ -548,6 +580,10 @@ header .intro-text {
   padding: 100px 0 60px;
   background: linear-gradient(135deg, #5c2c00a8 0%, #884424f5 50%, #411d02 100%);
   color: rgba(255, 255, 255, 0.75);
+
+  @media screen and (max-width: 768px) {
+    padding: 30px 0 50px 0;
+  }
 }
 #contact .section-title {
   margin-bottom: 40px;
@@ -721,6 +757,6 @@ label {
 
 @media (max-width: 768px) {
   #about img {
-    margin: 50px 0;
+    margin: 20px 0 10px 0 ;
   }
 }
